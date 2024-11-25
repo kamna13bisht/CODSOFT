@@ -1,1 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+body {
+    font-family: 'Verdana, sans-serif';
+    line-height: 1.6;
+    background: linear-gradient(120deg, #e8eeb5, #e8eeb5);
+    color: #333;
+    padding: 20px;
+}
+
+
+.hero-img:hover {
+    transform: scale(1.06);
+    transition: transform 0.3s ease;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background-color: #004d40;
+    color: beige;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro .hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #004d40;
+}
+
+/* Qualities Section */
+.qualities, .achievements {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #004d40;
+    color: beige;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.qualities h2, .achievements h2 {
+    font-size: 1.8em;
+    color: beige;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.qualities ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.qualities li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #004d40;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Section for Quotes */
+#quotes {
+    padding: 20px;
+    background-color: #004d40;
+    color: beige;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#quotes h2 {
+    margin: 0 0 10px;
+    color: beige;
+    font-size: 24px;
+    text-align: center;
+}
+
+#quotes p {
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    color:rgb(219, 226, 157);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#quotes button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#quotes button:hover {
+    background-color: beige;
+    color: #004d40;
+}
+
+/* Chart Container */
+#achievementChart {
+    display: block;
+    margin: 20px auto;
+    max-width: 400px;
+    background-color: beige;
+    border: 1px solid beige;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart.js Styling */
+canvas {
+    max-width: 100%;
+    height: auto;
+}
 
