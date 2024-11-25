@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Ratan Tata</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Ratan Tata: A Visionary Leader</h1>
+        <p>"Take the stones people throw at you, and use them to build a monument." - Ratan Tata</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <img src="img.jpg.jpg" alt="Ratan Tata" class="hero-img">
+            <p>Ratan Tata is a name synonymous with integrity, innovation, and philanthropy. As the former chairman of the Tata Group, he has led the organization to global success while championing ethical business practices and social responsibility.</p>
+        </section>
+
+        <section class="qualities">
+            <h2>Admirable Qualities</h2>
+            <ul>
+                <li><strong>Visionary Leadership:</strong> He transformed the Tata Group into a global powerhouse, making strategic acquisitions like Jaguar Land Rover and Tetley Tea.</li>
+                <li><strong>Philanthropy:</strong> Ratan Tata is renowned for his philanthropic efforts, donating a significant portion of Tata Group's profits to health, education, and rural development.</li>
+                <li><strong>Humility:</strong> Despite his immense success, he is known for his simplicity, humility, and approachability.</li>
+            </ul>
+        </section>
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <p>During his tenure, the Tata Group's revenues grew over 40 times, and profits increased over 50 times. He received several honors, including the Padma Vibhushan and Padma Bhushan, two of India's highest civilian awards.</p>
+            <p>He also played a pivotal role in launching the Tata Nano, an affordable car that demonstrated his commitment to serving the masses.</p>
+        </section>
+    </main>
+
+    <section id="quotes">
+        <h2>Inspirational Quotes</h2>
+        <p id="quote-display">"Never underestimate the power of kindness, empathy, and compassion in your interactions with others."</p>
+        <button onclick="changeQuote()">Show Another Quote</button>
+    </section>
+    
+    <script>
+        const quotes = [
+           "Leadership is about taking responsibility, not making excuses.",
+            "If you want to walk fast, walk alone. But if you want to walk far, walk together.",
+            "Ups and downs in life are very important to keep us going, because a straight line even in an ECG means we are not alive."
+        ];
+    
+        function changeQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            const selectedQuote = quotes[randomIndex];
+            document.getElementById("quote-display").textContent = `"${selectedQuote}"`;
+        }
+    </script>
+<canvas id="achievementChart" width="400" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('achievementChart').getContext('2d');
+    const achievementChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Automotive', 'Steel', 'IT Services', 'Other'],
+            datasets: [{
+                data: [40, 25, 20, 15],
+                backgroundColor: ['#4CAF50', '#FF9800', '#03A9F4', '#9E9E9E']
+            }]
+        }
+    });
+</script>
+    
+
+    <footer>
+        <p>Created by KAMNA BISHT. Dedicated to the inspiring legacy of Ratan Tata.</p>
+    </footer>
+</body>
+</html>
